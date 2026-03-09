@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 
@@ -35,7 +37,7 @@ document.querySelectorAll(".reveal").forEach((element) => {
 
 const contactForm = document.querySelector(".contact-form");
 
-if (contactForm) {
+if (contactForm instanceof HTMLFormElement) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const button = contactForm.querySelector("button");
