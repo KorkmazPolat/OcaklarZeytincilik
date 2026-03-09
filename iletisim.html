@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim | Ocaklar Zeytincilik</title>
+    <meta
+      name="description"
+      content="Ocaklar Zeytincilik iletişim, satış ve bayilik talepleri için ulaşım sayfası."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">OZ</span>
+          <span class="brand-text">
+            <strong>Ocaklar</strong>
+            <span>Zeytincilik</span>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html">Anasayfa</a>
+          <a href="hikayemiz.html">Hikayemiz</a>
+          <a href="urunler.html">Ürünler</a>
+          <a href="uretim.html">Üretim</a>
+          <a class="is-current" href="iletisim.html">İletişim</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero reveal">
+          <p class="eyebrow">İletişim</p>
+          <h1>Satış, bayilik ve özel siparişler için ulaşın.</h1>
+          <p class="hero-text">
+            Bu sayfa ileride WhatsApp butonu, konum haritası ve sipariş formu ile
+            daha güçlü bir satış kanalına dönüştürülebilir.
+          </p>
+        </section>
+
+        <section class="contact">
+          <div class="contact-panel">
+            <div class="contact-card reveal">
+              <h3>Doğrudan İletişim</h3>
+              <a href="tel:+905555555555">+90 555 555 55 55</a>
+              <a href="mailto:info@ocaklarzeytincilik.com">info@ocaklarzeytincilik.com</a>
+              <p>Erdek, Balıkesir</p>
+            </div>
+            <form class="contact-form reveal">
+              <label>
+                Ad Soyad
+                <input type="text" name="name" placeholder="Adınızı girin" />
+              </label>
+              <label>
+                E-posta
+                <input type="email" name="email" placeholder="ornek@mail.com" />
+              </label>
+              <label>
+                Mesaj
+                <textarea name="message" rows="4" placeholder="Nasıl yardımcı olabiliriz?"></textarea>
+              </label>
+              <button class="button button-primary" type="submit">Mesaj Gönder</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
