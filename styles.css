@@ -858,6 +858,10 @@ h3 {
   align-content: start;
 }
 
+.contact-cta-card {
+  align-content: center;
+}
+
 .embed-note {
   margin: 0;
   color: var(--muted);
@@ -922,6 +926,35 @@ h3 {
   border: 0;
 }
 
+.form-page {
+  padding: 42px;
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.form-page-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.form-page-embed {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: rgba(255, 253, 248, 0.84);
+  padding: 10px;
+  min-height: 760px;
+}
+
+.form-page-fallback {
+  margin-top: 16px;
+}
+
 .reveal {
   opacity: 1;
   transform: none;
@@ -957,7 +990,8 @@ h3 {
 
   .shop-toolbar,
   .shop-section-head,
-  .shop-card-top {
+  .shop-card-top,
+  .form-page-head {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -1024,6 +1058,7 @@ h3 {
   .shop-toolbar,
   .category-section,
   .shop-section,
+  .form-page,
   .map-section,
   .offer-strip {
     padding: 26px 20px;
