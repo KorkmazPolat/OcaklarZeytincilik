@@ -109,6 +109,11 @@ body::before {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
+  transition: color 180ms ease;
+}
+
+.site-nav a:hover {
+  color: var(--accent-deep);
 }
 
 .site-nav a.is-current {
@@ -670,10 +675,15 @@ h3 {
   padding: 42px;
 }
 
-.page-links,
-.values-grid {
+.page-links {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -971,6 +981,82 @@ h3 {
   transform: translateY(0);
 }
 
+.site-footer {
+  margin-top: 40px;
+  padding: 40px 42px 28px;
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 20px;
+}
+
+.footer-brand .brand {
+  display: inline-flex;
+  margin-bottom: 2px;
+}
+
+.footer-tagline {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-width: 28ch;
+}
+
+.footer-nav,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav strong,
+.footer-contact strong {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.footer-nav a,
+.footer-contact a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 180ms ease;
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover {
+  color: var(--accent-deep);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.footer-bottom a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
 @media (max-width: 980px) {
   .hero,
   .sales-hero,
@@ -1009,6 +1095,18 @@ h3 {
     right: auto;
     left: 18px;
     bottom: 18px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1076,5 +1174,25 @@ h3 {
 
   .olive-card {
     min-height: 420px;
+  }
+
+  .site-footer {
+    padding: 28px 20px 20px;
+    border-radius: 28px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
   }
 }

@@ -35,23 +35,21 @@ document.querySelectorAll(".reveal").forEach((element) => {
   observer.observe(element);
 });
 
-const contactForm = document.querySelector(".contact-form");
+// Product category filter
+const filterPills = document.querySelectorAll(".toolbar-pills .pill[data-filter]");
+const shopSections = document.querySelectorAll(".shop-section[data-category]");
 
-if (contactForm instanceof HTMLFormElement) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const button = contactForm.querySelector("button");
+if (filterPills.length && shopSections.length) {
+  filterPills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+      filterPills.forEach((p) => p.classList.remove("is-active"));
+      pill.classList.add("is-active");
 
-    if (button) {
-      const originalText = button.textContent;
-      button.textContent = "Mesajınız alındı";
-      button.setAttribute("disabled", "true");
-
-      window.setTimeout(() => {
-        button.textContent = originalText;
-        button.removeAttribute("disabled");
-        contactForm.reset();
-      }, 1800);
-    }
+      const filter = pill.dataset.filter;
+      shopSections.forEach((section) => {
+        section.style.display =
+          filter === "all" || section.dataset.category === filter ? "" : "none";
+      });
+    });
   });
 }

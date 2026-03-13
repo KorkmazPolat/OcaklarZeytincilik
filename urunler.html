@@ -14,7 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ürünler | Ocaklar Zeytincilik" />
+    <meta property="og:description" content="Ocaklar Zeytincilik zeytinyağı, doğal sabun ve zeytin ürünleri." />
+    <meta property="og:locale" content="tr_TR" />
   </head>
   <body>
     <div class="page-shell">
@@ -45,8 +50,8 @@
             <p class="eyebrow">Mağaza</p>
             <h1>Ürünler artık vitrin değil, alışveriş hissi veren kartlarda.</h1>
             <p class="hero-text">
-              Şimdilik görsel alanları boş bıraktım. Sonra her ürün kartına gerçek şişe,
-              sabun ve kavanoz fotoğraflarını kolayca yerleştirebiliriz.
+              Soğuk sıkım zeytinyağından doğal sabuna, kahvaltılık zeytinden hediyelik
+              setlere — tüm ürün yelpazemizi aşağıda bulabilirsiniz.
             </p>
             <div class="shop-chips">
               <a href="#zeytinyagi">Zeytinyağı</a>
@@ -57,15 +62,15 @@
           <aside class="shop-side">
             <div class="shop-side-card reveal">
               <strong>Hızlı Sipariş</strong>
-              <span>Telefon ve WhatsApp akışına uygun CTA yapısı</span>
+              <span>WhatsApp veya sipariş formu üzerinden kolayca sipariş verin.</span>
             </div>
             <div class="shop-side-card reveal">
-              <strong>Tahmini Paketler</strong>
-              <span>250 ml, 500 ml, 1 L, 2 L, 5 L ve seçili kutu formatları</span>
+              <strong>Ambalaj Seçenekleri</strong>
+              <span>250 ml, 500 ml, 1 L, 2 L, 5 L ve özel hediye kutusu formatları mevcuttur.</span>
             </div>
             <div class="shop-side-card reveal">
-              <strong>Ürün Fotoğrafları Hazır Alan</strong>
-              <span>Her kartın üst görsel paneline gerçek image eklenecek</span>
+              <strong>Hızlı Teslimat</strong>
+              <span>Erdek ve çevresi için aynı gün, Türkiye geneli için kargo seçeneği.</span>
             </div>
           </aside>
         </section>
@@ -74,10 +79,10 @@
           <div class="toolbar-group">
             <span class="toolbar-label">Popüler Kategoriler</span>
             <div class="toolbar-pills">
-              <span class="pill is-active">Tümü</span>
-              <span class="pill">Erken Hasat</span>
-              <span class="pill">Doğal Sabun</span>
-              <span class="pill">Kahvaltılık</span>
+              <span class="pill is-active" data-filter="all">Tümü</span>
+              <span class="pill" data-filter="zeytinyagi">Erken Hasat</span>
+              <span class="pill" data-filter="sabun">Doğal Sabun</span>
+              <span class="pill" data-filter="zeytin">Kahvaltılık</span>
             </div>
           </div>
           <div class="toolbar-group">
@@ -89,7 +94,7 @@
           </div>
         </section>
 
-        <section class="shop-section" id="zeytinyagi">
+        <section class="shop-section" id="zeytinyagi" data-category="zeytinyagi">
           <div class="shop-section-head reveal">
             <div>
               <p class="eyebrow">Zeytinyağları</p>
@@ -99,14 +104,11 @@
           </div>
           <div class="shop-grid">
             <article class="shop-card reveal">
-              <div class="product-image image-oil-bottle">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">250 ml cam şişe görseli eklenecek</span>
-              </div>
+              <div class="product-image image-oil-bottle"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Erken Hasat</span>
-                  <strong class="price-tag">Tahmini 490 TL</strong>
+                  <strong class="price-tag">490 TL</strong>
                 </div>
                 <h3>250 ml Premium Seri</h3>
                 <p>Gurme sofralar ve hediyelik kullanım için daha yoğun, canlı ve rafine profil.</p>
@@ -123,14 +125,11 @@
             </article>
 
             <article class="shop-card reveal">
-              <div class="product-image image-oil-green">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">500 ml natürel sızma görseli eklenecek</span>
-              </div>
+              <div class="product-image image-oil-green"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Natürel Sızma</span>
-                  <strong class="price-tag">Tahmini 790 TL</strong>
+                  <strong class="price-tag">790 TL</strong>
                 </div>
                 <h3>500 ml Günlük Seri</h3>
                 <p>Kahvaltı, salata ve soğuk kullanım için dengeli içim sağlayan ana ürün.</p>
@@ -147,14 +146,11 @@
             </article>
 
             <article class="shop-card reveal">
-              <div class="product-image image-oil-tin">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">1 L / 2 L / 5 L teneke görseli eklenecek</span>
-              </div>
+              <div class="product-image image-oil-tin"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Aile Boyu</span>
-                  <strong class="price-tag">Tahmini 1.450 TL+</strong>
+                  <strong class="price-tag">1.450 TL+</strong>
                 </div>
                 <h3>1 L - 5 L Mutfak Serisi</h3>
                 <p>Sürekli kullanım için daha avantajlı hacimlerde planlanan ana mutfak paketi.</p>
@@ -172,7 +168,7 @@
           </div>
         </section>
 
-        <section class="shop-section" id="sabun">
+        <section class="shop-section" id="sabun" data-category="sabun">
           <div class="shop-section-head reveal">
             <div>
               <p class="eyebrow">Doğal Sabunlar</p>
@@ -182,14 +178,11 @@
           </div>
           <div class="shop-grid">
             <article class="shop-card reveal">
-              <div class="product-image image-soap-pure">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">Saf sabun görseli eklenecek</span>
-              </div>
+              <div class="product-image image-soap-pure"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Klasik Seri</span>
-                  <strong class="price-tag">Tahmini 95 TL</strong>
+                  <strong class="price-tag">95 TL</strong>
                 </div>
                 <h3>Saf Zeytinyağlı Sabun</h3>
                 <p>Sade içerik hissi veren günlük bakım ürünü. Tekli veya set halinde sunulabilir.</p>
@@ -206,14 +199,11 @@
             </article>
 
             <article class="shop-card reveal">
-              <div class="product-image image-soap-lavender">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">Lavantalı seri görseli eklenecek</span>
-              </div>
+              <div class="product-image image-soap-lavender"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Aromalı Seri</span>
-                  <strong class="price-tag">Tahmini 120 TL</strong>
+                  <strong class="price-tag">120 TL</strong>
                 </div>
                 <h3>Lavantalı Sabun</h3>
                 <p>Hediyelik sunum ve raf ürünü hissi için daha güçlü koku beklentisine uygun seri.</p>
@@ -230,14 +220,11 @@
             </article>
 
             <article class="shop-card reveal">
-              <div class="product-image image-soap-laurel">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">Defneli sabun görseli eklenecek</span>
-              </div>
+              <div class="product-image image-soap-laurel"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Özel Karışım</span>
-                  <strong class="price-tag">Tahmini 135 TL</strong>
+                  <strong class="price-tag">135 TL</strong>
                 </div>
                 <h3>Defneli Doğal Sabun</h3>
                 <p>Daha geleneksel ve güçlü karakterli bakım ürünlerini seven müşteriler için.</p>
@@ -255,7 +242,7 @@
           </div>
         </section>
 
-        <section class="shop-section" id="zeytin">
+        <section class="shop-section" id="zeytin" data-category="zeytin">
           <div class="shop-section-head reveal">
             <div>
               <p class="eyebrow">Zeytin Çeşitleri</p>
@@ -265,14 +252,11 @@
           </div>
           <div class="shop-grid">
             <article class="shop-card reveal">
-              <div class="product-image image-olive-green">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">Yeşil kırma zeytin görseli eklenecek</span>
-              </div>
+              <div class="product-image image-olive-green"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Kırma</span>
-                  <strong class="price-tag">Tahmini 210 TL</strong>
+                  <strong class="price-tag">210 TL</strong>
                 </div>
                 <h3>Yeşil Kırma Zeytin</h3>
                 <p>Kahvaltılık tarafta öne çıkan, canlı dokulu ve ferah lezzetli klasik ürün.</p>
@@ -289,14 +273,11 @@
             </article>
 
             <article class="shop-card reveal">
-              <div class="product-image image-olive-black">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">Sele zeytin görseli eklenecek</span>
-              </div>
+              <div class="product-image image-olive-black"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Sele</span>
-                  <strong class="price-tag">Tahmini 240 TL</strong>
+                  <strong class="price-tag">240 TL</strong>
                 </div>
                 <h3>Siyah Sele Zeytin</h3>
                 <p>Daha tok ve oturmuş aromalı geleneksel ürün isteyen müşteriler için.</p>
@@ -313,14 +294,11 @@
             </article>
 
             <article class="shop-card reveal">
-              <div class="product-image image-olive-marinated">
-                <span class="image-badge">Fotoğraf Alanı</span>
-                <span class="image-note">Soslu zeytin görseli eklenecek</span>
-              </div>
+              <div class="product-image image-olive-marinated"></div>
               <div class="shop-card-body">
                 <div class="shop-card-top">
                   <span class="product-tag">Soslu Seri</span>
-                  <strong class="price-tag">Tahmini 265 TL</strong>
+                  <strong class="price-tag">265 TL</strong>
                 </div>
                 <h3>Baharatlı Sofralık Zeytin</h3>
                 <p>Meze tabağı ve servis sunumları için daha modern çizgide planlanan alternatif.</p>
@@ -339,6 +317,40 @@
         </section>
       </main>
     </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">OZ</span>
+            <span class="brand-text">
+              <strong>Ocaklar</strong>
+              <span>Zeytincilik</span>
+            </span>
+          </a>
+          <p class="footer-tagline">Erdek, Balıkesir — Butik erken hasat natürel sızma zeytinyağı.</p>
+        </div>
+        <nav class="footer-nav">
+          <strong>Sayfalar</strong>
+          <a href="index.html">Anasayfa</a>
+          <a href="hikayemiz.html">Hikayemiz</a>
+          <a href="urunler.html">Ürünler</a>
+          <a href="uretim.html">Üretim</a>
+          <a href="iletisim.html">İletişim</a>
+          <a href="siparis.html">Sipariş</a>
+        </nav>
+        <div class="footer-contact">
+          <strong>İletişim</strong>
+          <a href="tel:+905555555555">+90 555 555 55 55</a>
+          <a href="mailto:info@ocaklarzeytincilik.com">info@ocaklarzeytincilik.com</a>
+          <a href="https://wa.me/905555555555?text=Merhaba%20Ocaklar%20Zeytincilik" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Ocaklar Zeytincilik. Tüm hakları saklıdır.</span>
+        <a href="https://maps.google.com/?q=Erdek,Bal%C4%B1kesir" target="_blank" rel="noreferrer">Erdek, Balıkesir</a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
