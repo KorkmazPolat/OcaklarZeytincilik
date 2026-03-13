@@ -337,63 +337,90 @@ section {
 }
 
 .image-oil-bottle {
-  background:
+  background-image: url('images/oil-bottle.svg'),
     radial-gradient(circle at 75% 20%, rgba(255, 245, 208, 0.95), transparent 16%),
     linear-gradient(180deg, rgba(112, 132, 43, 0.3), rgba(54, 69, 23, 0.18)),
     linear-gradient(180deg, #ebe2c8, #d7c59b);
+  background-size: auto 90%, auto, auto, auto;
+  background-position: center bottom, center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .image-oil-green {
-  background:
+  background-image: url('images/oil-bottle-daily.svg'),
     radial-gradient(circle at 70% 24%, rgba(255, 252, 236, 0.92), transparent 15%),
     linear-gradient(180deg, rgba(136, 156, 56, 0.38), rgba(63, 78, 28, 0.22)),
     linear-gradient(180deg, #edf0d7, #cfcc95);
+  background-size: auto 90%, auto, auto, auto;
+  background-position: center bottom, center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .image-oil-tin {
-  background:
+  background-image: url('images/oil-tin.svg'),
     radial-gradient(circle at 20% 25%, rgba(255, 255, 255, 0.55), transparent 15%),
     linear-gradient(180deg, rgba(112, 120, 98, 0.38), rgba(62, 69, 55, 0.18)),
     linear-gradient(180deg, #d7ddd6, #afb7ab);
+  background-size: 80% auto, auto, auto, auto;
+  background-position: center center, center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .image-soap-pure {
-  background:
+  background-image: url('images/soap-pure.svg'),
     linear-gradient(180deg, rgba(255, 255, 255, 0.42), transparent 40%),
     linear-gradient(180deg, #f3e1bd, #d8bb86);
+  background-size: 88% auto, auto, auto;
+  background-position: center center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .image-soap-lavender {
-  background:
+  background-image: url('images/soap-lavender.svg'),
     linear-gradient(180deg, rgba(255, 255, 255, 0.34), transparent 42%),
     linear-gradient(180deg, #e3d7e8, #b89ec7);
+  background-size: 88% auto, auto, auto;
+  background-position: center center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .image-soap-laurel {
-  background:
+  background-image: url('images/soap-laurel.svg'),
     linear-gradient(180deg, rgba(255, 255, 255, 0.34), transparent 42%),
     linear-gradient(180deg, #d7dfc6, #9baa74);
+  background-size: 88% auto, auto, auto;
+  background-position: center center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .image-olive-green {
-  background:
+  background-image: url('images/olive-green.svg'),
     radial-gradient(circle at 75% 22%, rgba(255, 255, 255, 0.62), transparent 14%),
     linear-gradient(180deg, rgba(148, 165, 70, 0.26), rgba(91, 105, 38, 0.2)),
     linear-gradient(180deg, #e8f0d7, #bdcf8d);
+  background-size: auto 90%, auto, auto, auto;
+  background-position: center bottom, center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .image-olive-black {
-  background:
+  background-image: url('images/olive-black.svg'),
     radial-gradient(circle at 22% 20%, rgba(255, 255, 255, 0.34), transparent 14%),
     linear-gradient(180deg, rgba(82, 72, 58, 0.28), rgba(42, 37, 29, 0.2)),
     linear-gradient(180deg, #b5aea6, #71685e);
+  background-size: auto 90%, auto, auto, auto;
+  background-position: center bottom, center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .image-olive-marinated {
-  background:
+  background-image: url('images/olive-marinated.svg'),
     radial-gradient(circle at 78% 18%, rgba(255, 245, 212, 0.62), transparent 15%),
     linear-gradient(180deg, rgba(156, 105, 54, 0.2), rgba(108, 69, 28, 0.18)),
     linear-gradient(180deg, #ead2b0, #c69257);
+  background-size: auto 90%, auto, auto, auto;
+  background-position: center bottom, center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .shop-card-body {

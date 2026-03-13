@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 340">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#52801e"/>
+      <stop offset="0.38" stop-color="#82b83a"/>
+      <stop offset="0.68" stop-color="#6a9a2e"/>
+      <stop offset="1" stop-color="#3c6015"/>
+    </linearGradient>
+    <linearGradient id="oilGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d4b030" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#b08818" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="labelGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5f8ee"/>
+      <stop offset="1" stop-color="#dde8c0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="90" cy="326" rx="46" ry="8" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- Bottle body – slightly wider than premium -->
+  <path d="M58 118 C40 128 36 150 36 172 L36 270 C36 295 58 312 90 312 C122 312 144 295 144 270 L144 172 C144 150 140 128 122 118 Z" fill="url(#bodyGrad)"/>
+
+  <!-- Oil tint -->
+  <path d="M58 118 C40 128 36 150 36 172 L36 270 C36 295 58 312 90 312 C122 312 144 295 144 270 L144 172 C144 150 140 128 122 118 Z" fill="url(#oilGrad)"/>
+
+  <!-- Neck – slightly wider -->
+  <path d="M76 46 L76 118 L104 118 L104 46 Z" fill="#52801e"/>
+
+  <!-- Shoulder -->
+  <path d="M58 118 Q76 110 90 110 Q104 110 122 118" fill="rgba(70,110,22,0.55)"/>
+
+  <!-- Cap (green) -->
+  <rect x="72" y="18" width="36" height="32" rx="8" fill="#2e5010"/>
+  <rect x="68" y="40" width="44" height="11" rx="4" fill="#223c0c"/>
+  <rect x="77" y="22" width="10" height="20" rx="5" fill="rgba(255,255,255,0.12)"/>
+
+  <!-- Label -->
+  <rect x="46" y="175" width="88" height="100" rx="7" fill="url(#labelGrad)" opacity="0.95"/>
+  <rect x="52" y="182" width="76" height="1" fill="#6a8830" opacity="0.3"/>
+  <rect x="52" y="268" width="76" height="1" fill="#6a8830" opacity="0.3"/>
+
+  <!-- Brand lines -->
+  <rect x="60" y="192" width="60" height="6" rx="3" fill="#354021" opacity="0.7"/>
+  <rect x="64" y="203" width="52" height="4" rx="2" fill="#354021" opacity="0.45"/>
+
+  <!-- Leaf / branch motif -->
+  <path d="M72 228 Q90 216 108 228" stroke="#5a8025" stroke-width="1.8" fill="none" opacity="0.6"/>
+  <ellipse cx="78" cy="224" rx="7" ry="4" fill="#6aaa30" opacity="0.55" transform="rotate(-15,78,224)"/>
+  <ellipse cx="90" cy="219" rx="7" ry="4" fill="#82c038" opacity="0.55"/>
+  <ellipse cx="102" cy="224" rx="7" ry="4" fill="#6aaa30" opacity="0.55" transform="rotate(15,102,224)"/>
+  <ellipse cx="76" cy="222" rx="2.2" ry="1.5" fill="rgba(255,255,255,0.35)"/>
+  <ellipse cx="88" cy="217" rx="2.2" ry="1.5" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- Text lines -->
+  <rect x="64" y="246" width="52" height="3.5" rx="1.75" fill="#354021" opacity="0.28"/>
+  <rect x="68" y="255" width="44" height="3" rx="1.5" fill="#354021" opacity="0.2"/>
+
+  <!-- Glass shine left -->
+  <path d="M44 150 C40 182 40 240 44 272" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.3"/>
+  <path d="M52 142 C49 166 49 214 52 238" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.17"/>
+
+  <!-- Neck shine -->
+  <path d="M82 50 L82 112" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.2"/>
+</svg>

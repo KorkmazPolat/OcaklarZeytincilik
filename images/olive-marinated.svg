@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260">
+  <defs>
+    <linearGradient id="jarGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="rgba(200,160,100,0.55)"/>
+      <stop offset="0.4" stop-color="rgba(240,200,140,0.7)"/>
+      <stop offset="0.7" stop-color="rgba(215,170,115,0.62)"/>
+      <stop offset="1" stop-color="rgba(170,130,80,0.58)"/>
+    </linearGradient>
+    <linearGradient id="lidGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d0d8c8"/>
+      <stop offset="1" stop-color="#909a88"/>
+    </linearGradient>
+    <linearGradient id="labelGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="rgba(255,252,240,0.95)"/>
+      <stop offset="1" stop-color="rgba(240,232,205,0.92)"/>
+    </linearGradient>
+    <linearGradient id="brineGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="rgba(210,170,80,0.3)"/>
+      <stop offset="1" stop-color="rgba(185,145,60,0.22)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="100" cy="252" rx="52" ry="8" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- Jar body -->
+  <path d="M38 90 C36 95 34 110 34 128 L34 200 C34 230 60 248 100 248 C140 248 166 230 166 200 L166 128 C166 110 164 95 162 90 Z" fill="url(#jarGrad)"/>
+
+  <!-- Brine / marinade liquid -->
+  <path d="M36 155 L36 200 C36 230 60 248 100 248 C140 248 164 230 164 200 L164 155 Z" fill="url(#brineGrad)"/>
+
+  <!-- Mixed olives - green -->
+  <ellipse cx="66" cy="146" rx="13" ry="10" fill="#4a8020" opacity="0.82"/>
+  <ellipse cx="66" cy="146" rx="4.5" ry="3" fill="rgba(255,255,255,0.32)" transform="translate(-3,-3)"/>
+
+  <!-- Purple/dark olive -->
+  <ellipse cx="92" cy="140" rx="13" ry="10" fill="#5a3070" opacity="0.8"/>
+  <ellipse cx="92" cy="140" rx="4.5" ry="3" fill="rgba(255,255,255,0.25)" transform="translate(-3,-3)"/>
+
+  <!-- Green olive -->
+  <ellipse cx="118" cy="146" rx="13" ry="10" fill="#6aaa30" opacity="0.8"/>
+  <ellipse cx="118" cy="146" rx="4.5" ry="3" fill="rgba(255,255,255,0.3)" transform="translate(-3,-3)"/>
+
+  <!-- Dark olive -->
+  <ellipse cx="54" cy="168" rx="12" ry="9" fill="#2a2010" opacity="0.75"/>
+  <ellipse cx="54" cy="168" rx="4" ry="2.8" fill="rgba(255,255,255,0.2)" transform="translate(-3,-3)"/>
+
+  <!-- Green -->
+  <ellipse cx="78" cy="164" rx="12" ry="9" fill="#3a7018" opacity="0.78"/>
+  <ellipse cx="78" cy="164" rx="4" ry="2.8" fill="rgba(255,255,255,0.28)" transform="translate(-3,-3)"/>
+
+  <!-- Purple -->
+  <ellipse cx="104" cy="162" rx="12" ry="9" fill="#4a2860" opacity="0.76"/>
+  <ellipse cx="104" cy="162" rx="4" ry="2.8" fill="rgba(255,255,255,0.22)" transform="translate(-3,-3)"/>
+
+  <!-- Green -->
+  <ellipse cx="130" cy="168" rx="12" ry="9" fill="#5a9028" opacity="0.76"/>
+
+  <!-- Herbs (rosemary/thyme sprigs) -->
+  <path d="M74 190 Q78 178 82 186 Q86 174 90 182" stroke="#4a6818" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M78 184" fill="#3a5810"/>
+  <!-- Small herb leaves -->
+  <ellipse cx="80" cy="182" rx="4" ry="2.5" fill="#4a6818" opacity="0.65" transform="rotate(-30,80,182)"/>
+  <ellipse cx="86" cy="178" rx="4" ry="2.5" fill="#3a5810" opacity="0.6" transform="rotate(20,86,178)"/>
+
+  <!-- Pepper red dot -->
+  <circle cx="118" cy="182" r="5" fill="#c03020" opacity="0.65"/>
+  <circle cx="118" cy="182" r="2" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Garlic clove -->
+  <path d="M136 188 Q138 181 142 185 Q138 192 136 188 Z" fill="#f0e0c0" opacity="0.7"/>
+
+  <!-- Jar shoulder -->
+  <path d="M38 90 C40 80 54 72 100 72 C146 72 160 80 162 90" fill="none" stroke="rgba(185,150,100,0.35)" stroke-width="2"/>
+
+  <!-- Label -->
+  <rect x="44" y="100" width="112" height="36" rx="5" fill="url(#labelGrad)"/>
+  <rect x="48" y="105" width="104" height="0.8" fill="#806030" opacity="0.3"/>
+  <rect x="48" y="131" width="104" height="0.8" fill="#806030" opacity="0.3"/>
+  <rect x="56" y="112" width="88" height="5" rx="2.5" fill="#503010" opacity="0.65"/>
+  <rect x="64" y="122" width="72" height="3.5" rx="1.75" fill="#503010" opacity="0.4"/>
+
+  <!-- Lid rim -->
+  <path d="M54 75 Q100 65 146 75 L148 85 Q100 74 52 85 Z" fill="#a0aca0" opacity="0.9"/>
+
+  <!-- Lid top -->
+  <ellipse cx="100" cy="70" rx="48" ry="12" fill="url(#lidGrad)"/>
+  <ellipse cx="100" cy="68" rx="20" ry="5" fill="#b0bca8" opacity="0.6"/>
+  <ellipse cx="100" cy="67" rx="8" ry="2" fill="#c8d4c0" opacity="0.5"/>
+
+  <!-- Glass shine left -->
+  <path d="M40 108 C37 140 37 188 40 218" stroke="rgba(255,255,255,0.4)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M48 104 C46 130 46 170 48 196" stroke="rgba(255,255,255,0.2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

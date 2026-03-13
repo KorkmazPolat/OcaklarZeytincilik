@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 200">
+  <defs>
+    <linearGradient id="soapTop" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ede0f8"/>
+      <stop offset="1" stop-color="#c8a8e8"/>
+    </linearGradient>
+    <linearGradient id="soapFront" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d8c0ee"/>
+      <stop offset="1" stop-color="#b090cc"/>
+    </linearGradient>
+    <linearGradient id="soapSide" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#9870b8"/>
+      <stop offset="1" stop-color="#8060a8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="130" cy="188" rx="72" ry="9" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Front face -->
+  <path d="M44 110 L44 168 Q44 178 130 178 Q216 178 216 168 L216 110 Z" fill="url(#soapFront)"/>
+
+  <!-- Top face -->
+  <path d="M44 110 L72 72 Q158 65 200 72 L216 110 Q158 102 44 110 Z" fill="url(#soapTop)"/>
+
+  <!-- Right side -->
+  <path d="M216 110 L200 72 L200 128 L216 168 Z" fill="url(#soapSide)"/>
+
+  <!-- Lavender stems on top -->
+  <line x1="104" y1="104" x2="104" y2="74" stroke="#7060a0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="120" y1="104" x2="118" y2="70" stroke="#7060a0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="136" y1="104" x2="136" y2="68" stroke="#7060a0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="152" y1="104" x2="154" y2="70" stroke="#7060a0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="168" y1="104" x2="168" y2="74" stroke="#7060a0" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Lavender buds -->
+  <ellipse cx="104" cy="78" rx="3.5" ry="6" fill="#9070c0" opacity="0.7"/>
+  <ellipse cx="104" cy="84" rx="3" ry="4" fill="#a080d0" opacity="0.6"/>
+  <ellipse cx="118" cy="74" rx="3.5" ry="6" fill="#9070c0" opacity="0.7"/>
+  <ellipse cx="118" cy="80" rx="3" ry="4" fill="#a080d0" opacity="0.6"/>
+  <ellipse cx="136" cy="72" rx="3.5" ry="6" fill="#9070c0" opacity="0.7"/>
+  <ellipse cx="136" cy="78" rx="3" ry="4" fill="#a080d0" opacity="0.6"/>
+  <ellipse cx="154" cy="74" rx="3.5" ry="6" fill="#9070c0" opacity="0.7"/>
+  <ellipse cx="154" cy="80" rx="3" ry="4" fill="#a080d0" opacity="0.6"/>
+  <ellipse cx="168" cy="78" rx="3.5" ry="6" fill="#9070c0" opacity="0.7"/>
+  <ellipse cx="168" cy="84" rx="3" ry="4" fill="#a080d0" opacity="0.6"/>
+
+  <!-- Texture lines on top -->
+  <path d="M76 96 Q136 89 186 96" stroke="rgba(130,100,180,0.3)" stroke-width="0.9" fill="none"/>
+  <path d="M78 102 Q136 95 184 102" stroke="rgba(130,100,180,0.22)" stroke-width="0.7" fill="none"/>
+
+  <!-- Front face text lines -->
+  <rect x="92" y="118" width="76" height="5" rx="2.5" fill="#6040a0" opacity="0.4"/>
+  <rect x="100" y="130" width="60" height="3.5" rx="1.75" fill="#6040a0" opacity="0.28"/>
+  <rect x="106" y="140" width="48" height="3" rx="1.5" fill="#6040a0" opacity="0.22"/>
+
+  <!-- Front face texture -->
+  <path d="M52 125 L208 125" stroke="rgba(140,100,190,0.18)" stroke-width="0.8" fill="none"/>
+  <path d="M52 145 L208 145" stroke="rgba(140,100,190,0.14)" stroke-width="0.7" fill="none"/>
+  <path d="M52 163 L208 163" stroke="rgba(140,100,190,0.1)" stroke-width="0.6" fill="none"/>
+
+  <!-- Top shine -->
+  <path d="M76 88 Q114 81 155 84" stroke="rgba(255,255,255,0.4)" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 200">
+  <defs>
+    <linearGradient id="soapTop" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#c8d8a8"/>
+      <stop offset="1" stop-color="#96b068"/>
+    </linearGradient>
+    <linearGradient id="soapFront" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#a8c078"/>
+      <stop offset="1" stop-color="#789848"/>
+    </linearGradient>
+    <linearGradient id="soapSide" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#587838"/>
+      <stop offset="1" stop-color="#486030"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="130" cy="188" rx="72" ry="9" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Front face -->
+  <path d="M44 110 L44 168 Q44 178 130 178 Q216 178 216 168 L216 110 Z" fill="url(#soapFront)"/>
+
+  <!-- Top face -->
+  <path d="M44 110 L72 72 Q158 65 200 72 L216 110 Q158 102 44 110 Z" fill="url(#soapTop)"/>
+
+  <!-- Right side -->
+  <path d="M216 110 L200 72 L200 128 L216 168 Z" fill="url(#soapSide)"/>
+
+  <!-- Bay leaves on top -->
+  <!-- Leaf 1 -->
+  <path d="M100 104 Q92 88 100 76 Q108 88 100 104 Z" fill="#3a6020" opacity="0.7"/>
+  <line x1="100" y1="104" x2="100" y2="76" stroke="#2a4a14" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Leaf 2 -->
+  <path d="M120 104 Q110 86 120 72 Q130 86 120 104 Z" fill="#4a7830" opacity="0.7"/>
+  <line x1="120" y1="104" x2="120" y2="72" stroke="#2a4a14" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Leaf 3 (center) -->
+  <path d="M136 104 Q124 84 136 68 Q148 84 136 104 Z" fill="#5a9038" opacity="0.72"/>
+  <line x1="136" y1="104" x2="136" y2="68" stroke="#2a4a14" stroke-width="0.9" opacity="0.5"/>
+
+  <!-- Leaf 4 -->
+  <path d="M152 104 Q142 86 152 72 Q162 86 152 104 Z" fill="#4a7830" opacity="0.7"/>
+  <line x1="152" y1="104" x2="152" y2="72" stroke="#2a4a14" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Leaf 5 -->
+  <path d="M170 104 Q162 88 170 76 Q178 88 170 104 Z" fill="#3a6020" opacity="0.7"/>
+  <line x1="170" y1="104" x2="170" y2="76" stroke="#2a4a14" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Branch connecting leaves -->
+  <path d="M98 104 Q136 96 172 104" stroke="#2a4a14" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Texture lines on top -->
+  <path d="M76 98 Q136 91 186 98" stroke="rgba(60,90,30,0.28)" stroke-width="0.8" fill="none"/>
+
+  <!-- Front face lines -->
+  <rect x="88" y="116" width="84" height="6" rx="3" fill="#304810" opacity="0.4"/>
+  <rect x="96" y="128" width="68" height="4" rx="2" fill="#304810" opacity="0.28"/>
+  <rect x="102" y="138" width="56" height="3.5" rx="1.75" fill="#304810" opacity="0.22"/>
+
+  <!-- Front texture lines -->
+  <path d="M52 126 L208 126" stroke="rgba(60,90,30,0.16)" stroke-width="0.8" fill="none"/>
+  <path d="M52 145 L208 145" stroke="rgba(60,90,30,0.13)" stroke-width="0.7" fill="none"/>
+  <path d="M52 163 L208 163" stroke="rgba(60,90,30,0.1)" stroke-width="0.6" fill="none"/>
+
+  <!-- Top shine -->
+  <path d="M74 88 Q112 81 154 84" stroke="rgba(255,255,255,0.38)" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>
