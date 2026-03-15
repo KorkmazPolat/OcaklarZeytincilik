@@ -34,22 +34,3 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((element) => {
   observer.observe(element);
 });
-
-// Product category filter
-const filterPills = document.querySelectorAll(".toolbar-pills .pill[data-filter]");
-const shopSections = document.querySelectorAll(".shop-section[data-category]");
-
-if (filterPills.length && shopSections.length) {
-  filterPills.forEach((pill) => {
-    pill.addEventListener("click", () => {
-      filterPills.forEach((p) => p.classList.remove("is-active"));
-      pill.classList.add("is-active");
-
-      const filter = pill.dataset.filter;
-      shopSections.forEach((section) => {
-        section.style.display =
-          filter === "all" || section.dataset.category === filter ? "" : "none";
-      });
-    });
-  });
-}
